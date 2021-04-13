@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Juego Piedra papel y tijera </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+
+        <h1>Juego Piedra papel y tijera</h1>
+        <form>
+            <label for="player1">Nombre del jugador 1:</label>
+            <input type="text" id="player1">
+            <br>
+            <br>
+
+            <label for="player2">Nombre del jugador 2:</label>
+            <input type="text" id="player2">
+        </form>              
+        
+        <div class="texto">
+            <button onclick="save()" class="option">Empezar</button>
+        </div>
+        
+        <div class="texto">
+            Elige una opción
+        </div>
+
+        <div id="lista_de_botones">
+            <button id="piedra" type="button" class="option" onClick="content('piedra')">PIEDRA</button>
+            &nbsp;
+            <button id="papel" type="button" class="option" onClick="content('papel')">PAPEL</button>
+            &nbsp;
+            <button id="tijera" type="button" class="option" onClick="content('tijera')">TIJERA</button>
+            &nbsp;
+
+            <div class="texto">
+                <button class="reset" onClick="reiniciar()">Reiniciar Juego</button>
+            </div>
+        </div>
+    </div>
+    <script src="juego.js"></script>
+</body>
+</html>
